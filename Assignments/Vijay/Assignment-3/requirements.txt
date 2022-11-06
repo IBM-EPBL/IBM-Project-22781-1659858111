@@ -1,0 +1,3 @@
+flask
+ibm-cos-sdk
+python-dotenv
