@@ -7,7 +7,9 @@ It would look like this:
 ```python
 COS_ENDPOINT="s3.tok.ap.cloud-object-storage.appdomain.cloud"
 COS_API_KEY_ID="h1MlAabyBkQXzgP1yjiVSpVtgEt6Zk8rxJmQvs70tSmH"
-COS_INSTANCE_CRN="https://medkit.s3.jp-tok.cloud-object-storage.appdomain.cloud/templates/index.html"
+
+Click Here
+"https://medkit.s3.jp-tok.cloud-object-storage.appdomain.cloud/templates/index.html"
 ```
 
 Don't worry, this is not the real credentials of mine, just placeholders ;)
