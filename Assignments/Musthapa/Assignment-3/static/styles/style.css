@@ -1,0 +1,41 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+
+body {
+    background-color: #255d98;
+    font-family: 'Source Code Pro', monospace;
+    font-style: italic;
+    font-display
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+h1 {
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+  
+#astro {
+    max-width: 10%;
+    min-width: 10%;
+}
+
+#nurse {
+    max-width: 100%;
+    max-height: fit-content;
+#thankU {
+    max-width: 10;
+    max-width: 10;    
+#logo
+     max-width: 10;
+     max-height: fit-content;
+}
+
+img {
+    border-radius: 5%;
+}
