@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://medkit.s3.jp-tok.cloud-object-storage.appdomain.cloud/Astro+Hospital.png">
+    <link rel="stylesheet" href="https://medkit.s3.jp-tok.cloud-object-storage.appdomain.cloud/style.css">
+    <title style="color:red">NM-HOSPITAL</title>
+</head>
+<body>
+    <div class="flex-container">
+        <img id="astro" src="https://medkit.s3.jp-tok.cloud-object-storage.appdomain.cloud/Astro+Hospital.png" alt="burenyuu">
+        <p style="color:red"><b>THE</b></p>
+		<h1 style="color:red">MAGNET+</h1>
+    </div>
+    <br>
+    <br>
+	 <div class="flex-container">
+        <img id="doctor" src="https://nmhospital.s3.jp-tok.cloud-object-storage.appdomain.cloud/hospital.png" alt="doctor" type="image/jpg">
+    <br>
+    <br>
+    </div>
+	<h2 style="color:red"><b>welcome to our Hospital<b></h2>
+	<p style="color:white">Hi! You can find the nearest hospital branches by using our Chat Assistant :)</p>
+    <img src="https://nmhospital.s3.jp-tok.cloud-object-storage.appdomain.cloud/doctor.jpg" style="width:800px;height:400px; alt="24/7">
+    <br>
+    <br>
+   <img id="nurse" src="https://medkit.s3.jp-tok.cloud-object-storage.appdomain.cloud/nurse.jpg" style="width:800px;height:400px; alt="nurse" type="image/jpg"> 
+    <p style="color:white"><b>Welcome to Astro+ Hospital and Health Care Center's website! Our site holds a wealth of information about the services and programs we offer for our regional community 
+	as well	as general health news,a provider listing and career opportunities.I believe we have an outstanding staff – physicians, clinical and support personnel – whose ultimate goal is to provide you with the best care possible in a respectful and compassionate manner. 
+We are continually looking for new ways to be better at what we do. Please don't hesitate to let us know what we can do to make your visit to Memorial Hospital and Health Care Center more comfortable.
+As a fundamental component of our mission statement, we allow ourselves to be guided by the needs of those we serve. As needs change, we will change.
+Again, thank you for allowing us to serve you during what is most likely a very vulnerable time in your life. I appreciate the significant trust you place in us!</b></p>
+    <br>
+    <br>
+    <p style="color:white">CopyLeft 2022 TomCodeX Corporation Ltd.</p>
+	 <marquee  behavior="scroll" direction="left">        
+          <img src="https://medkit.s3.jp-tok.cloud-object-storage.appdomain.cloud/ss.gif" style="width:200px;height:200px;"alt="logo"> 
+		  <img src="https://medkit.s3.jp-tok.cloud-object-storage.appdomain.cloud/hw.gif" style="width:200px;height:200px;"alt="logo"> 
+		   <img src="https://medkit.s3.jp-tok.cloud-object-storage.appdomain.cloud/covid.gif" style="width:200px;height:200px;"alt="logo">
+		 <img src="https://medkit.s3.jp-tok.cloud-object-storage.appdomain.cloud/hw.gif"  style="width:200px;height:200px;"alt="logo">
+		 <img src="https://medkit.s3.jp-tok.cloud-object-storage.appdomain.cloud/ss.gif" style="width:200px;height:200px;"alt="logo">
+    </marquee>  
+	<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "c47a7edf-8a0e-4bba-9289-49ffc3aa6e70", // The ID of this integration.
+    region: "jp-tok", // The region your integration is hosted in.
+    serviceInstanceID: "5efc6072-0fef-4d0d-be16-b99422fa2456", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+</body>
+</html>
