@@ -1,12 +1,14 @@
-# syntax=docker/dockerfile:1
+FROM ubuntu:latest
 
-FROM python:3.8-slim-buster
 
-WORKDIR /flask-hello
-
-COPY requirements.txt requirements.txt
+WORKDIR /app
+COPY ./requirements.txt /app/requirements.txt
+RUN apt update
+RUN apt install -y python3-pip
 RUN pip3 install -r requirements.txt
 
-COPY . .
+COPY . /app
 
-CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
+EXPOSE 5000
+
+CMD ["python3", "-m", "flask", "run", "--host=0.0.0.0"]
