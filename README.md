@@ -4,7 +4,7 @@
 
 <p align="center" >Web Application for reading News</p>
 
-## Ideation Phase
+## Project Phases
 
 * [Literature Survey](https://github.com/IBM-EPBL/IBM-Project-22781-1659858111/blob/main/Phases/Ideation%20Phase/Literature_Survey.pdf)
 * [Empathy Map Canvas](https://github.com/IBM-EPBL/IBM-Project-22781-1659858111/blob/main/Phases/Ideation%20Phase/Empathy_Map_Canvas.pdf)
