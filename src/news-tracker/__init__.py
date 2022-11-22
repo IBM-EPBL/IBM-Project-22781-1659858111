@@ -1,4 +1,5 @@
-from flask import Flask
+from flask import Flask, render_template
+from . import config
 from . import auth
 
 
@@ -10,9 +11,9 @@ def create_app(test_config=None):
     else:
         app.config.from_mapping(test_config)
 
-    @app.route('/hello')
-    def hello():
-        return "Hello, World!"
+    @app.route('/')
+    def index():
+        return render_template('index.html', title = 'Home | News Tracker')
 
     app.register_blueprint(auth.bp)
     return app

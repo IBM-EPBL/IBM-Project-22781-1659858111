@@ -1,10 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block title %}
+    {{ title }}
+{% endblock title %}
 
-</body>
-</html>
+{% block content %}
+<div class="container mx-auto">
+    <div>
+        <h1 class="mt-5 text-center text-primary lead display-2">
+            {{ title }}
+        </h1>
+    </div>
+    <div class="card mt-5 mx-auto" style="width: 22rem;">
+        <div class="card-header text-center lead">{{ target }} Login</div>
+        <div class="card-body">
+            <h5 class="card-title mb-4">
+                Login
+            </h5>  
+                <form class="needs-validation" name="loginForm" method="post" action="{{url_for('auth.login')}}" novalidate>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" name="username" id="username" aria-describedby="usernameHelp" placeholder="johnDoe69" required>
+                  <label for="username">Username</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
+                  <label for="password_user">Password</label>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+
+                    <p class="lead mt-3" style="font-size: .9rem;">Don't have an account? <a href="./register">Click here</a></p>
+
+                <p class="lead mt-3" style="font-size: .9rem;">Forgot credentials? Contact Authority.</p>
+
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+// source: bootstrap-forms documentation
+// Starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+'use strict';
+window.addEventListener('load', function() {
+// Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.getElementsByClassName('needs-validation');
+  // Loop over them and prevent submission
+  const validation = Array.prototype.filter.call(forms, function (form) {
+      form.addEventListener('submit', function (event) {
+          if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+      }, false);
+  });
+}, false);
+})();
+</script>
+{% endblock content %}
