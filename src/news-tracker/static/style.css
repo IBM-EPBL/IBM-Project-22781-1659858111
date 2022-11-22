@@ -51,3 +51,8 @@ input[type="text"]::placeholder {
     padding: 3%;
     
 }
+
+.flex-container
+{
+    display: flex;
+}

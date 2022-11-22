@@ -1,6 +1,7 @@
-from flask import Flask, render_template
-from . import config
+from flask import Flask, render_template, redirect, url_for, request
+from .config import RAPID_API_KEY, API_URI
 from . import auth
+from . import news
 
 
 def create_app(test_config=None):
@@ -11,9 +12,15 @@ def create_app(test_config=None):
     else:
         app.config.from_mapping(test_config)
 
-    @app.route('/')
+    @app.route('/', methods=['POST', 'GET'])
     def index():
-        return render_template('index.html', title = 'Home | News Tracker')
+
+        if request.method == 'POST':
+            q = request.form["search"]
+            return redirect(url_for('news.news_fetch', query=q))
+        else:
+            return render_template('index.html', title = 'Home | News Tracker')
 
     app.register_blueprint(auth.bp)
+    app.register_blueprint(news.bp)
     return app

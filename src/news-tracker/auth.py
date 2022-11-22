@@ -12,7 +12,7 @@ def register():
         username = request.form['username']
         password = request.form['password']
 
-        error = None
+        error = None    
 
         if not username:
             error = 'Username is required.'
@@ -36,14 +36,14 @@ def login():
         if error is None:
             session.clear()
             session['user_id'] = user['id']
-            return redirect(url_for('index'))
+            return redirect(url_for('/'))
 
         flash(error)
 
     return render_template('auth/login.html')
 
 
-@bp.route('/logout')
+@bp.route('/logout', methods=['GET', 'POST'])
 def logout():
     session.clear()
     return redirect(url_for('index'))
