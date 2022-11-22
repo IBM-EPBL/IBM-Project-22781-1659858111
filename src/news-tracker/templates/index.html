@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ title }}
+{% endblock title %}
+{% block content %}
+    <h1 class="index-label-title-center" id="center">News Tracker</h1>
+    <h1 id="center" class="text-muted mute-size">Search for any news :)</h1>
+    
+    <div class="mb-3 f-c">
+        <form class="d-flex" role="search" method="post">
+            <input class="form-control me-2" type="search" name="search" id="search" placeholder="Search Topic/News" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+    </div>
+      
+{% endblock content %}

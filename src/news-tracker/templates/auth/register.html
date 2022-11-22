@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container mx-auto">
+    <div>
+        <h1 class="mt-5 text-center text-primary lead display-2">
+            {{ title }}
+        </h1>
+    </div>
+    <div class="card mt-5 mx-auto" style="width: 22rem;">
+        <div class="card-header text-center lead">{{ target }} Register</div>
+        <div class="card-body">
+            <h5 class="card-title mb-4">
+                Register
+            </h5>  
+                <form class="needs-validation" name="loginForm" method="post" action="{{url_for('auth.login')}}" novalidate>
+                    <div class="row g-3 mt-2">
+                        <div class="col">
+                            <div class="mb-1">
+                                <label for="applicantUserName" >Username
+                                    <span style="color: red; ">*</span>
+                                </label>
+                              <input type="text" class="form-control mt-2" name="applicantUserName" id="applicantUserName" aria-describedby="helpId" pattern="^(?=.{8,20}$)(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$" required>
+                                <div class="valid-feedback">Looks good!</div>
+                                <div class="invalid-feedback">Should contain only max 25 characters only starting with an alphabet!</div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password_user">Password
+                                <span style="color: red; ">*</span> 
+                            </label>
+                            <input type="password" class="form-control" name="password_user" required pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$">
+                            <div class="valid-feedback">Looks good!</div>
+                            <div class="invalid-feedback">Minimum eight characters, at least one letter, one number and one special character!</div>
+                         </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+// source: bootstrap-forms documentation
+// Starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+'use strict';
+window.addEventListener('load', function() {
+// Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.getElementsByClassName('needs-validation');
+  // Loop over them and prevent submission
+  const validation = Array.prototype.filter.call(forms, function (form) {
+      form.addEventListener('submit', function (event) {
+          if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+      }, false);
+  });
+}, false);
+})();
+</script>
+{% endblock content %}
