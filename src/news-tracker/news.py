@@ -27,5 +27,5 @@ class FreeNews:
         return res.json()
 
 
-#g = FreeNews()
-#print(pprint(g.Search("elon musk")))
+g = FreeNews()
+print(pprint(g.Search("russia")))
