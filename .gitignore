@@ -26,4 +26,6 @@ htmlcov/
 .coverage.*
 *,cover
 
-.db
+*.db
+
+*.crt
