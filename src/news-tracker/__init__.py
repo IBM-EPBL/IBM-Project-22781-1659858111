@@ -1,11 +1,12 @@
 from flask import Flask, render_template, redirect, url_for, request
-from .config import RAPID_API_KEY, API_URI
+from .config import SECRET_KEY
 from . import auth
 from . import news
 
 
 def create_app(test_config=None):
     app = Flask(__name__, instance_relative_config=False)
+    app.secret_key = SECRET_KEY
 
     if test_config is None:
         app.config.from_pyfile(filename='config.py', silent=True)
