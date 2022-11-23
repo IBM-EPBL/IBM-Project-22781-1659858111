@@ -12,23 +12,23 @@
             <h5 class="card-title mb-4">
                 Register
             </h5>  
-                <form class="needs-validation" name="loginForm" method="post" action="{{url_for('auth.login')}}" novalidate>
+                <form class="needs-validation" name="loginForm" method="post" novalidate>
                     <div class="row g-3 mt-2">
                         <div class="col">
                             <div class="mb-1">
-                                <label for="applicantUserName" >Username
+                                <label for="username" >Username
                                     <span style="color: red; ">*</span>
                                 </label>
-                              <input type="text" class="form-control mt-2" name="applicantUserName" id="applicantUserName" aria-describedby="helpId" pattern="^(?=.{8,20}$)(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$" required>
+                              <input type="text" class="form-control mt-2" name="username" id="username" aria-describedby="helpId" pattern="^(?=.{8,20}$)(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$" required>
                                 <div class="valid-feedback">Looks good!</div>
                                 <div class="invalid-feedback">Should contain only max 25 characters only starting with an alphabet!</div>
                             </div>
                         </div>
                         <div class="mb-3">
-                            <label for="password_user">Password
+                            <label for="password">Password
                                 <span style="color: red; ">*</span> 
                             </label>
-                            <input type="password" class="form-control" name="password_user" required pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$">
+                            <input type="password" class="form-control" name="password" required pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$">
                             <div class="valid-feedback">Looks good!</div>
                             <div class="invalid-feedback">Minimum eight characters, at least one letter, one number and one special character!</div>
                          </div>
