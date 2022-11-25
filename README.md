@@ -40,4 +40,4 @@
 
 Project DEMO Video : [Link](https://youtu.be/L4bWmnCylpI)
 
-FINAL REPORT[PDF] : [Link](https://github.com/IBM-EPBL/IBM-Project-22781-1659858111/blob/main/Phases/Final%20Deliverables/NTA_PROJECT_REPORT.pdf)
+FINAL REPORT[PDF] : [Link](https://github.com/IBM-EPBL/IBM-Project-22781-1659858111/blob/main/Phases/Final%20Deliverables/PROJECT_FINAL_REPORT.pdf)
