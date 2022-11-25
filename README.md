@@ -10,7 +10,7 @@
 
 
 
-|      **Project Name**     | Skill And Job Recommender |
+|      **Project Name**     | >News Tracker Application |
 |:---------------------:|:------------------------------:|
 |         **Domain**        |  Cloud Application Development |
 |        **Team ID**        |  PNT2022TMID29362 |
