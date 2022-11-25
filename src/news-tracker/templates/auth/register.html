@@ -12,6 +12,11 @@
             <h5 class="card-title mb-4">
                 Register
             </h5>  
+            {% if user==1 %}
+                <div class="alert alert-danger" role="alert">
+                A user with the same username already exists! Please try a new username.
+              </div>
+            {% endif %}
                 <form class="needs-validation" name="loginForm" method="post" novalidate>
                     <div class="row g-3 mt-2">
                         <div class="col">
