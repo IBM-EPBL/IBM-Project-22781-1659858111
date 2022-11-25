@@ -15,7 +15,17 @@
         <div class="card-body">
             <h5 class="card-title mb-4">
                 Login
-            </h5>  
+            </h5>
+            {% if up==1 %}
+             <div class="alert alert-danger" role="alert">
+                {{ data }}
+              </div>
+            {% endif %}
+            {% if user==0 %}
+             <div class="alert alert-success" role="alert">
+                {{ data }}
+              </div>
+            {% endif %}   
                 <form class="needs-validation" name="loginForm" method="post" action="{{url_for('auth.login')}}" novalidate>
                 <div class="form-floating mb-3">
                   <input type="text" class="form-control" name="username" id="username" aria-describedby="usernameHelp" placeholder="johnDoe69" required>

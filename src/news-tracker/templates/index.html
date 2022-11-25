@@ -4,6 +4,9 @@
     {{ title }}
 {% endblock title %}
 {% block content %}
+    {% if succ==1 %}
+        <p style="text-align: center">{{ data }}</p>
+    {% endif %}
     <h1 class="index-label-title-center" id="center">News Tracker</h1>
     <h1 id="center" class="text-muted mute-size">Search for any news :)</h1>
     
