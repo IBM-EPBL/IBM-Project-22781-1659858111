@@ -10,7 +10,7 @@
 
 
 
-|      **Project Name**     | >News Tracker Application |
+|      **Project Name**     | <b>News Tracker Application<b> |
 |:---------------------:|:------------------------------:|
 |         **Domain**        |  Cloud Application Development |
 |        **Team ID**        |  PNT2022TMID29362 |
