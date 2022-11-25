@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% if raw_obj_len < 3 %}
+    <h5 id="center" style="margin-top: 10vh;">No results found for : <a href="/news/{{ query }}/JSON">{{ query }}</a></h5>
+    {% else %}
+    <h5 id="center" style="margin-top: 10vh;">Found {{ res }} results for : <a href="/news/{{ query }}/JSON">{{ query }}</a></h5>
+    <div class="flex-container" style="margin-left: 100px; margin-right: 100px; margin-top: 50px;">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            {% for article in obj %}
+            <div class="col">
+                <div class="card">
+                  <img src="{{ article['media'] }}" class="card-img-top" alt="{{ article['title'] }}">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="{{ article['link'] }}">{{ article['title'] }}</a></h5>
+                    <p class="card-text">{{ article['summary'] }}</p>
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+    </div>
+    {% endif %}
+    
+{% endblock content %}
