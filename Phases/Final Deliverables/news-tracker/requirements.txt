@@ -1,0 +1,6 @@
+flask
+sqlalchemy
+flask-login
+python-dotenv
+requests
+ibm-db
