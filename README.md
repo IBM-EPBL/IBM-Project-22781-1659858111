@@ -16,7 +16,7 @@
 |        **Team ID**        |  PNT2022TMID29362 |
 
 
-## __Team Size : 5__
+## __Team Size : 4__
 
 
 |Team Leader :| AADHAVAN P|
