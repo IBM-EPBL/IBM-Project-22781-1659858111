@@ -4,7 +4,7 @@
 
 <p align="center" >Web Application for reading News</p>
 <br>
-<img align="right" alt="Coding" width="380" src="https://medkit.s3.jp-tok.cloud-object-storage.appdomain.cloud/tt-4.gif">
+<img align="right" alt="Coding" width="380" src="https://medkit.s3.jp-tok.cloud-object-storage.appdomain.cloud/news_online_800_bravo.gif">
 
 # IBM-Project-22781-1659858111
 
