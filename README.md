@@ -3,7 +3,7 @@
 <h1 align="center" style="margin-top: 0px;">News Tracker</h1>
 
 <p align="center" >Web Application for reading News</p>
-<img align="right" alt="Coding" width="380" src="https://medkit.s3.jp-tok.cloud-object-storage.appdomain.cloud/news.gif">
+<img align="right" alt="Coding" width="380" src="https://medkit.s3.jp-tok.cloud-object-storage.appdomain.cloud/morning_news.gif">
 
 ## Project Phases
 
