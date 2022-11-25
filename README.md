@@ -6,6 +6,25 @@
 <br>
 <img align="right" alt="Coding" width="380" src="https://medkit.s3.jp-tok.cloud-object-storage.appdomain.cloud/morning_news.gif">
 
+# IBM-Project-22781-1659858111
+
+
+
+|      **Project Name**     | Skill And Job Recommender |
+|:---------------------:|:------------------------------:|
+|         **Domain**        |  Cloud Application Development |
+|        **Team ID**        |  PNT2022TMID29362 |
+
+
+## __Team Size : 5__
+
+
+|Team Leader :| AADHAVAN P|
+| ------------|---------------|              
+|Team member 1 :|VIJAY R|
+|Team member 2 :|MOHAMED MUSTHAPA N|
+|Team member 3 :|MANOJKUMAR K|
+
 ## Project Phases
 
 * [Literature Survey](https://github.com/IBM-EPBL/IBM-Project-22781-1659858111/blob/main/Phases/Ideation%20Phase/Literature_Survey.pdf)
